@@ -10,5 +10,5 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32x32.png') }}">
 -->
 
-<link rel="stylesheet" href = "https://use.typekit.net/bkc5luv.css">
-<link rel="stylesheet" href="{{ url_for('css/style.css') }}">
+<link rel="stylesheet" href = "https://use.typekit.net/bkc5luv.css" async>
+<link rel="stylesheet" href="{{ url_for('css/style.css') }}" async>
