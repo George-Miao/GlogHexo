@@ -12,7 +12,7 @@
 
     <div class="al_index_footer_item al_index_footer_extra">
         Built with
-        <a>Potology</a>
+        <a href="https://miao.dev">Potology</a>
         / Power by 
         <a href="https://hexo.io/">Hexo</a>
     </div>
