@@ -1,0 +1,19 @@
+{
+  "name": "acetolog",
+  "version": "1.0.1",
+  "description": "A beautiful & simple theme.",
+  "repository": "https://github.com/iGuan7u/Acetolog",
+  "author": "iGuan7u <iguan7u@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

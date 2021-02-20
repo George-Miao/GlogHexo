@@ -1,0 +1,1 @@
+{{ list_tags({ style: false,  class: "al-tag", show_count: false, separator: "" }) }}

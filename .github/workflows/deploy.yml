@@ -1,0 +1,35 @@
+name: Publish Glog
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js lts
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '12.x'
+    - name: prepare build env
+      env:
+        HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
+        NEXT_VERSION: v8.0.0-rc.2
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.name 'George Miao'
+        git config --global user.email 'gm@miao.dev'
+        npm i -g hexo-cli
+        npm i
+    - name: deploy to github 
+      run: |
+        hexo g 
+        echo miao.dev >> public/CNAME 
+        hexo d
