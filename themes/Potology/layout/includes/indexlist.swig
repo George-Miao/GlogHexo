@@ -21,6 +21,7 @@
 
             {% block list %}{% endblock %}
 
+            {% if page.prev !== 0 || page.next !== 0 %}
             <nav class="dis_flex al_post_nav">
                 <a class="al_post_nav_item dis_flex_acenter" href="{{ '/' + page.prev_link || '/' }}">
                     {% if page.prev !== 0 %}
@@ -39,6 +40,7 @@
                     {% endif %}
                 </a>
             </nav>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

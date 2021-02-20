@@ -17,12 +17,12 @@
 }
 
 .al_index_page_seperator {
-    &::after {
+    &::before {
         content: "";
         height: 1px;
         width: 50px;
         position: absolute;
-        bottom: 0;
+        top: -40px;
         left: 50%;
         margin-left: -25px;
         background: rgba(51, 51, 51, 0.2);
@@ -33,6 +33,7 @@
     position: relative;
     list-style-type: none;
     padding: 80px 20px;
+    margin-top: 40px
 }
 
 .al_index_post_title_cnt {

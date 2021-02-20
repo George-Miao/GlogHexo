@@ -51,7 +51,7 @@
                     <div class="al_page_tags"> {{ list_tags(page.tags, { style: false, class: "al-tag", show_count: false, separator: "" }) }} </div>
                 </div>
 
-                {% if toc(page.content) %}
+                {% if toc(page.content) && page.toc !== 'off' %}
                     <div class="al_page_content_outline">
                         {{ toc(page.content,{list_number:false}) }}
                     </div>
