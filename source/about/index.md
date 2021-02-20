@@ -16,7 +16,7 @@ toc: off
 
 ### Contact
 
-- Email: [gm\[at\]miao.dev](mailto:gm@miao.dev)
+- Email: [gm@miao.dev](mailto:gm@miao.dev)
 - Github: [@George-Miao](https://github.com/George-Miao)
 - Telegram: [@pop_gg](https://t.me/pop_gg)
 - Channel: [@popsDailyDose](https://t.me/popsDailyDose)
