@@ -8,11 +8,11 @@ toc: off
 
 ### About Me
 
+- zh-Hans-CN / en-US
 - Syracuse University
 - Major in Math & Math Education
-- Currently at Shanghai
+- Currently in Shanghai
 - Man, I love FOSS
-<!-- - Frontend dev at [moseeker.com](https://moseeker.com) -->
 
 ### Contact
 
@@ -23,7 +23,7 @@ toc: off
 - Site: [Miao.dev](https://miao.dev) (Yes, here)
 - Twitter: [@miao_dev](https://twitter.com/miao_dev)
 
-#### Language Of Choice (Used most commonly)
+### PL Of Choice (Used most commonly)
 
 - Typescript(Javascript)
 - Rust
