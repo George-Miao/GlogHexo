@@ -13,8 +13,9 @@
         <img class="al_lightbox_img"/>
     </div>
     <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_pos_ab al_fake_background"></div>
     <div class="al_page_container">
-        <div class="al_pos_ab al_fake_background"></div>
+        
         <div class="al_main_container al_shadow al_main_page_container">
             <article class="al_article">
                 <div class="al_index_post_title_cnt dis_flex">
@@ -46,7 +47,7 @@
 
                         <div class="al_page_content_info">
                             {{ page.date.format('MMM D, Y') }}
-                        </div>
+                        </div>    
                     </div>
                     <div class="al_page_tags"> {{ list_tags(page.tags, { style: false, class: "al-tag", show_count: false, separator: "" }) }} </div>
                 </div>
@@ -68,6 +69,7 @@
             </article>
 
             {# Navigate Element #}
+            {% if page.prev !== 0 || page.next !== 0 %}
             <nav class="dis_flex al_post_nav">
                 <a class="al_post_nav_item dis_flex_acenter" href="{{ url_for(page.prev.path) }}">
                     {% if page.prev %}
@@ -86,6 +88,7 @@
                     {% endif %}
                 </a>
             </nav>
+            {% endif %}
         </div>
     </div>
 
