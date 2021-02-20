@@ -15,7 +15,7 @@
         <div class="al_main_container al_shadow">
             <div class="al_section_container dis_flex_jcenter">
                 <div class="section_header">
-                    LATEST POSTS
+                    Latest Posts
                 </div>
             </div>
 

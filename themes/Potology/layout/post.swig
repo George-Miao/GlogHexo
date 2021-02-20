@@ -34,7 +34,7 @@
 
                         {% if min2read %}
                             <div class="al_page_content_info">
-                                {{ min2read(page.content) }} minutes read
+                                {{ min2read(page.content) }} min
                             </div>
                         {% endif %}
 
