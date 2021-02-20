@@ -1,7 +1,7 @@
 <title>{{ page.title || config.subtitle || '' }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
-<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw" defer></script>
 
 <!--
 <link rel="shortcut icon" href="{{ url_for('favicon.ico') }}">
@@ -10,5 +10,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32x32.png') }}">
 -->
 
-<link rel="stylesheet" href = "https://use.typekit.net/bkc5luv.css" async>
-<link rel="stylesheet" href="{{ url_for('css/style.css') }}" async>
+<link rel="stylesheet" href = "https://use.typekit.net/bkc5luv.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://use.typekit.net/bkc5luv.css"></noscript>
+<link rel="stylesheet" href="{{ url_for('css/style.css') }}">

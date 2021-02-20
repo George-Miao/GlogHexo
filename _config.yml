@@ -92,3 +92,4 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: Potology
+all_minifier: true
