@@ -29,7 +29,7 @@
                     {% endif %}
                     {% if item.categories && item.categories.length %}
                         <div class="al_page_content_info">
-                            In {{ list_categories(item.categories, { style: false, show_count: false, separator: "." }) }}
+                            In {{ list_categories(item.categories, { style: false, show_count: false, separator: ". " }) }}
                         </div>
                     {% endif %}
                     </div>

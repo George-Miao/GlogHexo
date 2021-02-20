@@ -9,13 +9,7 @@
         <div class="dis_flex_jcenter al_header_hoverable al_header_right">
             <!-- <a href="/">PORTAL</a> -->
             <a href="/about">ABOUT</a>
-            <a href="/archives">ARCHIVES</a>
-            <div class="al_header_setting">
-                <svg class="al_header_icon">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
-                </svg>
-            </div>
-            
+            <a href="/archives">ARCHIVES</a>  
         </div>
     </div>
 </header>
