@@ -1,0 +1,90 @@
+root: /
+
+Home: /
+
+language: en
+
+author: iGuan7u
+description: A beautiful & simple theme.
+
+# AvatorURL
+# it would be shown on sidecar.
+
+avatar: https://avataaars.io/?avatarStyle=Circle&topType=Hat&accessoriesType=Prescription02&facialHairType=Blank&clotheType=Hoodie&clotheColor=Heather&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light
+
+# Comment
+
+gitalk:
+  enable: false
+  clientID: github_clientID
+  clientSecret: github_clientSecret
+  repo: you site homepage
+  owner: your username
+  admin: same as [owner]
+
+disqus:
+  enable: false
+  shortname: your_disqus_short_name
+
+# Contact_Info
+# Contact info will be shown on the side bar.
+
+contact:
+  enable: true
+  description: 'Syr / FOSS / Dev'
+
+  twitter:
+    enable: true
+    username: Miao_dev
+
+  github:
+    enable: true
+    username: George-Miao
+
+  weibo:
+    enable: false
+    username: weibo_username
+
+  facebook:
+    enable: false
+    username: facebook_username
+
+  instagram:
+    enable: false
+    username: instagram_username
+
+# Analytice
+
+mta_analytics:
+  enable: false
+  name: mta_analytics_name
+  sid: mta_analytics_sid
+
+baidu_analytics:
+  enable: false
+  id: baidu_analytice_id
+
+google_analytice:
+  enable: false
+  tracking_id: google_tracking_id
+
+# Website ICPLicense
+# which is useful in China mainland.
+
+ICPLicense:
+  enable: false
+  content: 'Fill IPCLicense'
+
+# ExtraPlugin
+
+extra_plugin:
+  enable: false
+  url: extra_plugin_js_url
+
+# Development Setting
+
+node_sass:
+  # outputStyle: nested
+  outputStyle: compressed
+  precision: 5
+  sourceComments: false

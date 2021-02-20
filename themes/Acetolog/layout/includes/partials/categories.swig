@@ -1,1 +1,0 @@
-{{ list_categories({ style: false, separator: ", " }) }}

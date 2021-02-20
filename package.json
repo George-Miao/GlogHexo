@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo g",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "serve": "hexo server -i 0.0.0.0"
+    "deploy": "hexo d",
+    "serve": "hexo server -i 0.0.0.0",
+    "pub": "hexo g && wrangler publish"
   },
   "hexo": {
     "version": "5.2.0"
