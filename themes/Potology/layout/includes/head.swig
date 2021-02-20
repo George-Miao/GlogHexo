@@ -1,6 +1,7 @@
 <title>{{ page.title || config.subtitle || '' }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+{{ open_graph({"twitter_id": "Miao_dev"}) }}
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw" defer></script>
 
 <!--
