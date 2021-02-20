@@ -51,6 +51,46 @@
     }
 }
 
+.al_error {
+    padding: 40px 50px !important;
+    div {
+        left: -30px;
+        top: -30px
+    }
+    h1::after {
+        content: "_";
+        animation: blinker 1s ease-in-out infinite;
+    }
+
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+}
+
+.al_error_info_container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    a {
+        margin-bottom: 8px
+    }
+    .al_error_ques {
+        font-size: 20px;
+        color: #444;
+        margin-bottom: 16px
+    }
+    .al_error_ans {
+        margin-left: 10px
+    }
+    .al_back_home_button {
+        color: #FFF;
+        margin-top: 50px
+    }
+}
+
 @media screen and (max-width: 768px) {
     .al_main_container {
         margin: 0;
@@ -65,6 +105,23 @@
     }
     .al_article {
         padding: 0 !important
+    }
+
+    .al_error_info_container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        a {
+            margin-bottom: 8px
+        }
+        .al_error_ques {
+            font-size: 20px;
+            color: #444;
+            margin-bottom: 16px
+        }
+        .al_error_ans {
+            margin-left: 3px
+        }
     }
 }
 
