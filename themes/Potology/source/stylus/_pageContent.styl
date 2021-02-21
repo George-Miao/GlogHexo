@@ -137,6 +137,13 @@ figure.highlight {
 	}
 }
 
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+}
+
 #post-body > ul {
 	list-style: none;
 
@@ -196,6 +203,11 @@ figure.highlight {
 	}
 }
 
+#post-body dl dd{
+	margin-inline-start: 20px;
+	margin-bottom: 15px
+}
+
 ol {
 	counter-reset: ol;
 	li {
@@ -212,5 +224,14 @@ ol {
 			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Nimbus Sans, Helvetica, Tahoma, Arial, sans-serif;
 			font-size: 13px;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#post-body dl dd{
+		margin-inline-start: 20px;
+	}
+	.al_index_background_letter {
+		display: none
 	}
 }
