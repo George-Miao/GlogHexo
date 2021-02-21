@@ -6,8 +6,9 @@
     "build": "hexo clean && hexo g",
     "clean": "hexo clean",
     "deploy": "hexo d",
-    "serve": "hexo server -i 0.0.0.0",
-    "pub": "hexo g && wrangler publish"
+    "serve": "yarn env && hexo server -i 0.0.0.0",
+    "env": "hexo config commit_sha $VERCEL_GIT_COMMIT_SHA & hexo config commit_branch $VERCEL_GIT_COMMIT_REF",
+    "pub": "yarn env && hexo g && wrangler publish"
   },
   "hexo": {
     "version": "5.2.0"
