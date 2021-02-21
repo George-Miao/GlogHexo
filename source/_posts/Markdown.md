@@ -83,11 +83,11 @@ Unordered
 Ordered
 
 1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
 
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
 
 Start numbering with offset:
 
@@ -97,13 +97,6 @@ Start numbering with offset:
 ## Code
 
 Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
 
 Block code "fences"
 
@@ -211,7 +204,7 @@ Term 2 with _inline markup_
 
 : Definition 2
 
-        { some code, part of Definition 2 }
+      { some code, part of Definition 2 }
 
     Third paragraph of definition 2.
 

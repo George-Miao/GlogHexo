@@ -12,7 +12,7 @@
   "hexo": {
     "version": "5.2.0"
   },
-  "dependencies": {
+  "devDependencies": {
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",
     "hexo-deployer-git": "^2.1.0",

@@ -116,9 +116,9 @@ figure.highlight {
 #post-body > ul, #post-body > ol {
 	padding-inline-start: 0px;
 
-	li {
-		margin-bottom: 5px;
-	}
+	// li {
+		// margin-bottom: 5px;
+	// }
 
 	p {
 		display: inline;
@@ -135,12 +135,19 @@ figure.highlight {
 			display: inline-block;
 			margin-right: 10px;
 		}
+
+		&::marker {
+			content: ""
+		}
+
+		// margin-bottom: 5px;
 		text-indent: -0.7em;
+		line-height 1.5rem;
 	}
 }
 
 ol {
-	counter-reset: ol 0;
+	counter-reset: ol;
 	li {
 		display: block;
 		text-indent: -1.45em;
@@ -150,9 +157,10 @@ ol {
 			counter-increment: ol;
 			color: $theme_color;
 			text-align: right;
-			display: inline-block;
 			min-width: 1em;
 			margin-right: 0.5em;
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Nimbus Sans, Helvetica, Tahoma, Arial, sans-serif;
+			font-size: 13px;
 		}
 	}
 }
