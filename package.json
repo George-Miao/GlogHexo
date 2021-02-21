@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "env": "echo $VERCEL_GIT_COMMIT_SHA && hexo config commit_sha $VERCEL_GIT_COMMIT_SHA & hexo config commit_branch $VERCEL_GIT_COMMIT_REF",
+    "env": "echo $VERCEL_GIT_COMMIT_SHA && hexo config commit_sha $VERCEL_GIT_COMMIT_SHA && hexo config commit_branch $VERCEL_GIT_COMMIT_REF",
     "pub": "hexo g && wrangler publish",
     "build": "yarn env && hexo g",
     "serve": "hexo server -i 0.0.0.0"

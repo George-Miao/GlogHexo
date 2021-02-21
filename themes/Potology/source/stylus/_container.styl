@@ -55,6 +55,7 @@
 
 .al_error {
     padding: 40px 50px !important;
+    position: relative;
     div {
         left: -30px;
         top: -30px
@@ -97,7 +98,7 @@
     .al_main_container {
         margin: 0;
         padding: 50px 2rem;
-        box-shadow: rgba(1, 1, 1, 0.1) 0px 1px 6px;
+        box-shadow: rgba(1, 1, 1, 0.2) 0px 1px 6px;
     }
     .al_page_info {
         flex-direction: column;
@@ -107,6 +108,14 @@
     }
     .al_article {
         padding: 0 !important
+    }
+
+    .al_error {
+        padding: 0 !important;
+
+        h1 {
+            font-size:65px
+        } 
     }
 
     .al_error_info_container {
@@ -135,7 +144,6 @@
 
 @media screen and (min-width: 1250px) {
     .al_main_container {
-        padding: 100px 50px;
         max-width: 1170px;
         margin: 0 auto;
     }
