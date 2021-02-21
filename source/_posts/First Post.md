@@ -17,7 +17,7 @@ There's several things I want to do or implement on this blog site, but have no 
 - [x] Potology, the theme of this site based on [Acetology](https://github.com/iGuan7u/Acetolog) which is based on [Typology](https://mekshq.com/theme/typology/1)
 - [x] Deployed on [Vercel](https://vercel.com)
 - [x] [blog.miao.dev](https://blog.miao.dev) for [master branch](https://github.com/George-Miao/GlogHexo)
-- [x] [blog-review.miao.dev](https://blog-review.miao.dev) for [dev branch](https://github.com/George-Miao/GlogHexo/tree/dev) preview
+- [x] [blog-preview.miao.dev](https://blog-preview.miao.dev) for [dev branch](https://github.com/George-Miao/GlogHexo/tree/dev) preview
 - [x] A customized 404 page
 - [x] [Archive](/archives), tags and categories page
 - [ ] favicon (Yea I'm too lazy to make a favicon)
