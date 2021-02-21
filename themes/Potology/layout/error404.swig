@@ -8,7 +8,7 @@
     <div class="al_page_container">
       <div class="al_pos_ab al_fake_background"></div>
       <div class="al_main_container al_shadow al_main_page_container ">
-        <div class="al_article al_error">
+        <div class="al_error">
             <div class="al_pos_ab al_letter al_archive_title_letter nonselectable">
               O
             </div>
