@@ -230,3 +230,9 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 \_here be dragons_x
 :::
+
+### Checkbox
+
+- [ ] New Task
+- [ ] Earn 1 Million
+- [x] Small target: Earn 100 Million

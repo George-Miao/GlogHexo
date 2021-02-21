@@ -11,6 +11,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32x32.png') }}">
 -->
 
-<link rel="stylesheet" href = "https://use.typekit.net/bkc5luv.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://use.typekit.net/bkc5luv.css"></noscript>
-<link rel="stylesheet" href="{{ url_for('css/style.css') }}">
+<link rel="stylesheet" href = "{{ url_for('css/bkc5luv.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href = "{{ url_for('css/style.css') }}">
+<noscript><link rel="stylesheet" href="{{ url_for('css/bkc5luv.css') }}"></noscript>
