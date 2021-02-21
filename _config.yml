@@ -82,5 +82,3 @@ markdown:
     - name: markdown-it-emoji
       options:
         shortcuts: {}
-commit_branch: dev
-commit_sha: fa1eade47b73733d6312d5abfad33ce9e4068081

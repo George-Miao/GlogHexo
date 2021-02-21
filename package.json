@@ -3,12 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo clean && hexo g",
-    "clean": "hexo clean",
-    "deploy": "hexo d",
-    "serve": "yarn env && hexo server -i 0.0.0.0",
     "env": "hexo config commit_sha $VERCEL_GIT_COMMIT_SHA & hexo config commit_branch $VERCEL_GIT_COMMIT_REF",
-    "pub": "yarn env && hexo g && wrangler publish"
+    "pub": "hexo g && wrangler publish",
+    "build": "yarn env && hexo g",
+    "serve": "hexo server -i 0.0.0.0"
   },
   "hexo": {
     "version": "5.2.0"
