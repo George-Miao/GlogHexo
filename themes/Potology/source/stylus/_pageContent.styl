@@ -65,6 +65,7 @@ blockquote {
 	margin-left: -1em;
 	padding-left: 0.8em;
 	border-left: 0.2em solid $theme_color_light;
+	font-style: italic;
 }
 
 .arrow svg #rod {
@@ -188,17 +189,26 @@ pre {
 	}
 }
 
+.footnotes-list {
+	padding-inline-start: 0
+}
+
 .footnote-item {
+	counter-reset: footnote;
 	margin-top: 1rem
+	display: flex
 	
 	p {
 		margin-top: 0
-		text-indent: 1rem
+		text-indent: 0
 	}
-	&::before {
-		margin-bottom: .3rem
+
+	&::before {	
 		display: block
 		text-align: left
+		position: relative
+		bottom: 5px
+		left: 20px
 	}
 }
 
