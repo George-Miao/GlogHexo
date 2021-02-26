@@ -3,7 +3,7 @@ title: First Post
 date: 2021-02-22 02:47:53
 updated: 2021-02-22 13:46:24
 categories: [ChitChat]
-tags: [English, WIP]
+tags: [en-US, WIP]
 ---
 
 This is my first actual post here. Those four before are either test posts or placeholders (which means part or all of the content are random generated) I created during developing and testing so it is not your problem if you cannot understand some of the content. I would like to share how I created this site and other chit-chats about it and the future.

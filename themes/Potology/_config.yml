@@ -6,7 +6,7 @@ language: en
 
 author: iGuan7u
 description: A beautiful & simple theme.
-
+timezone: Asia/Shanghai
 # AvatorURL
 # it would be shown on sidecar.
 
