@@ -57,11 +57,12 @@ tags: [zh-Hans-CN, WIP]
 - `Terminal` - Yakuake & iTerm2
 - `Editor` - VSCode-Insiders，配置了不少东西，用自带的 `settings-sync`，还蛮不错的，插件、设置、快捷键都会同步好。
 - `Vim`
-- `Telegram` - 各个平台基本都用的 Telegram 官方客户端（Telegram-QT 之类的），除了 windows 用的 unigram。实在是 windows 的字体渲染太难受了，WPF 没那么多的历史包袱，整体的效果会比 win32 的程序好看很多。曾经手机上用的 TelegramX，可是作者真的太久没更新了，很多新出的 feature 都用不了，只能转回 Telegram 官方客户端（或许以后回试试 Plus Messenger 之类的）
+- `Telegram` - 各个平台基本都用的 Telegram 官方客户端（Telegram-QT 之类的），除了 windows 用的 unigram。实在是 windows 的字体渲染太难受了，WPF 没那么多的历史包袱，整体的效果会比 win32 的程序好看很多。曾经手机上用的 TelegramX，可是作者真的太久没更新了，很多新出的 feature 都用不了，只能转回 Telegram 官方客户端（或许以后会试试 Plus Messenger 之类的）
 - `Yarn`
 - `N` - Node 版本管理
 - `Rclone` - 用来同步和备份移动硬盘到 B2 上。BTW，B2 + Cloudflare 免费带宽真的用的好爽（
-- `Browser` - Chromium 和 Firefox Developer。三月中谷歌要停 Chromium-based 浏览器的同步，我还不清楚会干脆转到 FF 还是去用 Chrome。~~谷歌怎么还不倒闭~~
+- `Browser` - Chromium 和 Firefox Developer。三月中谷歌要停 Chromium-based 浏览器的同步，~~我还不清楚会干脆转到 FF 还是去用 Chrome~~ 我已经全面转到FF Dev了。~~谷歌怎么还不倒闭~~
 - `AUR` - yay
 - `Cloudflare` - 我的大部分域名都 host 在 cf，主要用的功能大概是 `workers`, `dns` 和 `cdn`，偶尔会用一下 `Page Rules`。至于`Anti-DDoS`，我个人的站基本没什么流量 ~~我也想有人来 D 呜呜呜~~ 所以不在意。
+- `Cf Page` - Cloudflare 最新开放beta的功能，基本就是类似 Vercel 和 Netlify 那样的静态站部署。因为是还在beta的原因，使用体验不是很好，build一个基础的小单页应用需要五分钟，大部分时间在setup。经常有莫名其妙的 Internal Error 直接弹出来。而且从功能性上来讲，比起其他我用过的类似服务都要简陋的多。我本来期待着作为cf生态的新成员可以和cf的其他功能完美联动，结果除了一个自动设置CNAME到 pages.dev 的子域名以外就没有其他联系了。包括我本来期待的类似 Vercel functions 那样可以作 per-repo 的 worker 也根本看不见影子。希望未来cf能好好完善一下吧。
 - `Vercel` - 以前用 [Netlify](https://netlify.com)，后面就转到 Vercel 了。据我个人不可靠的测试，Netlify 似乎比 Vercel 要慢不少。基本就是部署一些 JAMStack 的站，或者类似这个博客这样的纯静态站。好用，懒人必备，push 即更新（
