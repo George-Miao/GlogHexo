@@ -14,6 +14,5 @@
         {% include "./plugins/googleAnalytice.swig" %}
         {% include "./plugins/plugin.swig" %}
     </body>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b14ec022a53c4b5ea57485e234316310"}'></script>
 </html>
         
