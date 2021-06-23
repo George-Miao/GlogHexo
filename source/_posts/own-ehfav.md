@@ -83,7 +83,7 @@ const loadGalleries = async () => {
 
 ### 前端部分
 
-Jamstack 部署可以参考 [这篇博客](https://blog.codecentric.de/en/2019/02/modern-jamstack-deployment/)，编译输出的文件目录是 `/front/dist`
+Jamstack 部署可以参考 [这篇博客](https://blog.codecentric.de/en/2019/02/modern-jamstack-deployment/)，编译输出的文件目录是 `/front/dist`，如果部署到平台后显示白屏请手动设置。
 
 ### 后端部分（可选）
 
@@ -120,7 +120,9 @@ zone_id=""
 > wrangler publish
 ```
 
-## FAQ
+## FAQ & 问题
 
 - Q: 为什么加载这么久？
   A: 别问，问就是 known issue and won't fix
+- Q: 为什么部署到 `vercel` （或者别的 Jamstack 平台）上之后显示白屏？
+  A: 去设置，找到 Output directory，改为 `dist`
