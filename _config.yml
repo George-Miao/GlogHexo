@@ -78,6 +78,7 @@ markdown:
     - markdown-it-deflist
     - markdown-it-imsize
     - markdown-it-mark
+    - markdown-it-attrs
     - markdown-it-regexp
     - markdown-it-task-checkbox
     - name: markdown-it-container
