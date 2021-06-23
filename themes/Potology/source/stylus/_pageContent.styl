@@ -48,16 +48,48 @@ hr {
 	margin-top: 0.7em
 }
 
-ins {
-	background: #e5ffd5;
-	padding: .5rem 0 .5rem 1rem;
+ins, .success, .info, .warning, .danger {
+	padding: .5rem .5rem .5rem 1rem;
 	margin-left: -1rem;
 	text-decoration: none;
-	border-left: .2rem solid #aade8b
+}
+
+.success, .info, .warning, .danger {
+	text-decoration: none;
+	margin: 2rem 0;
+	p {
+		margin-top: 0.35rem
+	}
+}
+
+ins {
+	background: #e5ffd5;
+	border-left: .2rem solid #aade8b;
 	&::before {
 		content: "+";
 		margin-right: 1rem
 	}
+	line-height: normal
+}
+
+.success {
+	background: #e5ffd5;
+	border-left: .2rem solid #aade8b;
+}
+
+.info {
+	background: #cbeeff;
+	border-left: .2rem solid #53ceff;;
+}
+
+.warning {
+	background: #ffe2d1;
+	border-left: .2rem solid #ffa670;
+}
+
+.danger {
+	background: #ffc5c5;
+	border-left: .2rem solid #ff6868;
 }
 
 blockquote {
@@ -78,7 +110,7 @@ blockquote {
 
 mark {
 	color: inherit;
-	display: inline;
+ 	display: inline;
 	padding: 0.2em 0.5em;
 	background-color: #fcffc0
 }
