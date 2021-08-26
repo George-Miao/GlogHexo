@@ -110,3 +110,8 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+browsersync:
+  logLevel: 'warn'
+  ghostMode:
+    scroll: true
+  instanceName: 'uniqueString'
