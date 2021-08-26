@@ -1,8 +1,9 @@
 .al_page_content_outline {
     line-height: 20px;
     font-size: .95em;
-    padding: 8px 16px;
-    margin: 0 0 25px 0;
+    padding: 8px;
+    padding-bottom: 4px;
+    margin-bottom: 25px;
     display: block;
     color: #808080;
     border: none;
@@ -17,6 +18,9 @@
     li {
         list-style-position: outside;
         margin-left: 1.5em;
+        &::before {
+            position: initial;
+        }
     }
 
     .toc-link {
