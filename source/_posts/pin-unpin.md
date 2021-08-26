@@ -150,7 +150,7 @@ Rust 编译器报了一个关于 `self.future.poll(cx)` 的错：
 简单概括来讲，所有的 Rust 类型都可以被划分进两个分类：
 
 1. 可以被安全地在内存中移动的类型。这是默认且普遍的。例如所有的基本类型像是数字，字符串，布尔值，还有所有由这些类型组成的结构体和 enum。大部分的类型都在这个类别内！
-2. 自指类型，也就是不能被安全地在内存中移动的类型。这类类型是很罕见的。一个例子是 [tokio 内部使用的一些介入式链表](https://docs.rs/tokio/1.10.0/src/tokio/util/linked_list.rs.html)。还有就是大部分实现了 `Future` 的类型和借用的数据。原因在 [Rust async book](https://rust-lang.github.io/async-book/04_pinning/01_chapter.html) 中有很好的被解释。
+2. 自指类型，也就是不能被安全地在内存中移动的类型。这类类型是很罕见的。一个例子是 [tokio 内部使用的一些介入式链表](https://docs.rs/tokio/1.10.0/src/tokio/util/linked_list.rs.html)。还有就是大部分实现了 `Future` 的类型和借用的数据。原因在 [Rust async book](https://rust-lang.github.io/async-book/04_pinning/01_chapter.html) 中有很好地被解释。
 
 在内存中移动分类 1 中的类型是完全安全的。你不会因为移动这些类型导致任何指针失效。但是如果你想要移动分类 2 中的类型，你会导致像是我们刚才看到的指针失效并且引发 UD。在早期的 Rust 版本中，你需要非常小心地使用这些类型才能保证它们不会被移动，又或者当你移动了它们的时候，你需要使用 `unsafe` 来更新所有的指针。不过在 Rust 1.33 后，编译器可以自动识别类型所在的分类，并且保证它们的安全性。
 
