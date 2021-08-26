@@ -11,7 +11,7 @@
 {{page.year}}
   {% for item in page.posts %}
     <li class="al_archive_item">
-      <div class="al_archive_item_date">{{item.date.format("YY-MM-DD")}}</div>
+      <div class="al_archive_item_date">{{item.date.format("YYYY-MM-DD")}}</div>
       <a class="al_archive_item_title" href="{{ url_for(item.link||item.path) }}">{{item.title|default('No Title')}}</a>
     </li>
   {% endfor %}
