@@ -1,7 +1,7 @@
 ---
 title: 年轻人的第一个XP展板
 categories: [Tutorial]
-tags: [zh-Hans-CN, WIP]
+tags: [zh-Hans-CN]
 date: 2021-06-21 19:02:56
 ---
 

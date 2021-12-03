@@ -7,8 +7,28 @@
     font-display: swap;
 }
 
+@font-face {
+    unicode-range:  U+2014, U+2015, U+2E3B, U+2E3A
+    font-family: DASH;
+    src: local('STHeiti'),
+        local('PingFang SC'),
+        local('WenQuanYi Micro Hei'),
+        local("Microsoft Yahei");
+}
+
 body { 
-    font-family: "Josefin-sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Tahoma, Arial, STHeiti, "PingFang SC", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+    font-family: DASH, 
+        "Josefin-sans", 
+        -apple-system, BlinkMacSystemFont, 
+        "Helvetica Neue", 
+        "Helvetica",
+        "Tahoma", 
+        "Arial", 
+        "STHeiti", 
+        "PingFang SC", 
+        "WenQuanYi Micro Hei", 
+        "Microsoft Yahei", 
+        "sans-serif";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +36,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 24px;
   font-weight: 600;
   line-height: 1.25;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #666
 }
 
 h1 {
