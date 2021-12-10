@@ -1,14 +1,18 @@
 ---
 title: 年轻人的第一个XP展板
 categories: [Tutorial]
-tags: [zh-Hans-CN]
+tags: [zh-Hans-CN, NSFW]
 date: 2021-06-21 19:02:56
 ---
 
-~~哪个男孩子没有搭建一个 XP 展板的梦想呢？~~ 于是在某群友的启发下 [EhFavorite](https://github.com/George-Miao/EhFavorite) 诞生了，目前部署在 [eh.pops.moe](https://eh.pops.moe) !!NSFW!!
+~~哪个男孩子没有搭建一个 XP 展板的梦想呢？~~ 于是在某群友的启发下 [EhFavorite](https://github.com/George-Miao/EhFavorite) 诞生了，目前部署在 [eh.pops.moe](https://eh.pops.moe)。
 
+::: danger
+**NSFW Warning** 
+
+**警告：请勿在工作/上课时打开**
+:::
 <!-- more -->
-
 ## 提前准备
 
 ::: success
@@ -17,7 +21,7 @@ date: 2021-06-21 19:02:56
 
 本项目分为两个部分：前端 `/front` 和后端 `/worker`。前端部分是基于 [Svelte](https://svelte.dev/) 的标准 `Jamstack`，任何支持的平台或者 http server 都可以用来 host。我的现在部署在 [Vercel](https://vercel.com) 并通过某不愿透露姓名的知名 CDN [Cloudflare](https://cloudflare.com) 来~~减速~~加速，因为一些众所周知的原因，可能不太适合用来给国内访问。后端部分你可以用我已经部署好的 api（`https://api.miao.dev/eh?cookie={cookie}`），但是直接使用已经部署好的 api 可能会导致性能问题，而且我不会帮你[定时更新缓存](#cron)，缓存可能会过时。后端部分被部署在 [Cloudflare Workers](https://workers.dev) 上。部署本项目需要：
 
-1. 可以用来部署网站的服务器 或 支持 Jamstack 的平台（[CF Pages](https://pages.dev)，[Vercel](https://vercel.com)，[Netlify](https://netlify.com)等）
+1. 可以用来部署网站的服务器 或 支持 Jamstack 的平台（[CF Pages](https://pages.dev)，[Vercel](https://vercel.com)，[Netlify](https://netlify.com) 等）
 2. 一个可以用来编辑一些内容的本地环境（毕竟你我大概都不想在自己/别人的页面上看到 Pop's Fav），包括 Node, npm/yarn 等。
 3. 一个 E-hentai 帐号
 
