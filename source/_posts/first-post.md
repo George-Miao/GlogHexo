@@ -21,14 +21,12 @@ There's several things I want to do or implement on this blog site, but have no 
 - [x] [blog-preview.miao.dev](https://blog-preview.miao.dev) for [dev branch](https://github.com/George-Miao/GlogHexo/tree/dev) preview
 - [x] A customized 404 page
 - [x] [Archive](/archives), tags and categories page
+- [X] RSS
+- [X] Style for customized containers
+- [X] CI/CD pipeline for remote writing
 - [ ] favicon (Yea I'm too lazy to make a favicon)
 - [ ] Rewrite Potology with modern template engine (like ejs or pug, TBD) and maybe Sass/Scss/Less (This is just my personal preference).
-- [ ] CI/CD pipeline for remote writing
-- [ ] RSS
-- [ ] (Maybe) Email subscription
-- [ ] (Maybe) webhooks
 - [ ] Separated sitemap page
-- [ ] Style for customized containers
 
 ## Sitemap
 
