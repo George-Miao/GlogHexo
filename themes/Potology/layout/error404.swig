@@ -16,11 +16,11 @@
         </div>
         <div class="al_error_info_container">
           <a class="al_error_ques">Why am I seeing this page?</a>
-          <a class="al_error_ans"> - Because we cannot find the page you are looding for</a>
-          <a class="al_error_ans"> - Maybe you entered the wrong URL</a>
-          <a class="al_error_ans"> - Maybe my website just fxxked up</a>
-          <a class="al_error_ans"> - There are many possibilities</a>
-          <a class="al_error_ans"> - So why not go back to home?</a>
+          <a class="al_error_ans"> > Because we cannot find the page you are looding for</a>
+          <a class="al_error_ans"> > Maybe you entered the wrong URL</a>
+          <a class="al_error_ans"> > Maybe my website just fxxked up</a>
+          <a class="al_error_ans"> > There are many possibilities</a>
+          <a class="al_error_ans"> > So why not go back to home?</a>
           <a class="al_button al_button_theme al_index_post_button al_back_home_button" href="/">
             Go back
           </a>

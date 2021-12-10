@@ -44,9 +44,9 @@ a {
 .al_full_cover {
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    height: 100vh;
 }
 
 .al_button {
@@ -55,15 +55,18 @@ a {
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
-    &:hover {
-        box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
-    }
 }
 
 .al_button_theme {
     color: white;
     background: $theme_color;
     border: 1px solid $theme_color;
+    transition: .2s ease;
+    filter: brightness(1.1);
+    &:hover {
+        box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
+        filter: brightness(1.2);
+    }
 }
 
 .al_button_transparent {
@@ -103,10 +106,3 @@ a {
     color: #888
 }
 
-// @media screen and (max-height: 100vh) {
-//     .al_index_footer {
-//         position: fixed !important;
-//         bottom: 0;
-//         z-index: 100;
-//     }
-// }

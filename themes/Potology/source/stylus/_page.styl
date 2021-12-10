@@ -26,6 +26,16 @@
         color: $theme_color;
     }
 
+    a[rel *= "external"] {
+        &::after {
+            content: ' ↗';
+            font-size: 0.65rem;
+            position: relative;
+            top: -0.2rem;
+            // : -6px;
+        }
+    }
+
     q, blockquote {
         quotes: none;
 
@@ -94,6 +104,10 @@
     font-size: 13px;
     &::before {
         content: "#";
+    }
+    &[href="/tags/NSFW/" i] {
+        color: $theme_color;
+        font-weight: bold;
     }
 }
 
