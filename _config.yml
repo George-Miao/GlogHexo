@@ -115,3 +115,5 @@ browsersync:
   ghostMode:
     scroll: true
   instanceName: 'uniqueString'
+nofollow:
+  enable: true
