@@ -6,9 +6,9 @@
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw" defer></script>
 
 {% if config.vercel && config.cf_insight_token %}
-<script 
-defer 
-src='https://static.cloudflareinsights.com/beacon.min.js' 
+<script
+defer
+src='https://static.cloudflareinsights.com/beacon.min.js'
 data-cf-beacon='{"token": "{{ config.cf_insight_token }}"}'>
 </script>
 {% endif %}
@@ -20,6 +20,4 @@ data-cf-beacon='{"token": "{{ config.cf_insight_token }}"}'>
 <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32x32.png') }}">
 -->
 
-<link rel="stylesheet" href = "{{ url_for('css/bkc5luv.css') }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href = "{{ url_for('css/style.css') }}">
-<noscript><link rel="stylesheet" href="{{ url_for('css/bkc5luv.css') }}"></noscript>

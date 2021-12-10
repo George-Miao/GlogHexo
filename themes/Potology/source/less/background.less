@@ -1,0 +1,32 @@
+@import './var.less';
+
+.al_index_background {
+  z-index: 10;
+  background-color: @theme_color;
+}
+
+.al_index_background_letter {
+  font-size: 600px;
+  height: 770px;
+  z-index: 11;
+  cursor: default;
+}
+
+.al_index_background_bio {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+}
+
+.al_index_background h2 {
+  font-size: 48px;
+  position: relative;
+  z-index: 12;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+
+  &:hover {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+}

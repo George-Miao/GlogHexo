@@ -1,0 +1,149 @@
+@import './var.less';
+
+.al_fake_background {
+  background-color: @background_color;
+  top: 15vh;
+  width: 100%;
+  min-height: 85vh;
+  bottom: 0;
+  z-index: 15;
+}
+
+.al_main_container {
+  position: relative;
+  background-color: @main_background_color;
+  color: #444;
+  padding: 120px 100px;
+  z-index: 100;
+  * {
+    z-index: 100;
+  }
+}
+
+.al_post_nav {
+  justify-content: space-between;
+  margin-top: 50px;
+
+  .al_post_nav_item {
+    padding: 12px 0;
+    max-width: 180px;
+    cursor: pointer;
+
+    &:hover {
+      fill: @theme_color;
+      color: @theme_color;
+    }
+
+    color: @list_title_color;
+  }
+
+  .al_arrow {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 25px;
+  }
+}
+
+.al_error {
+  padding: 40px 50px !important;
+  position: relative;
+  div {
+    left: -30px;
+    top: -30px;
+  }
+  h1::after {
+    content: '_';
+    animation: blinker 1s ease-out infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+.al_error_info_container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-bottom: 8px;
+  }
+  .al_error_ques {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 16px;
+  }
+  .al_error_ans {
+    margin-left: 10px;
+  }
+  .al_back_home_button {
+    color: #fff;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .al_main_container {
+    margin: 0;
+    padding: 50px 2rem;
+    box-shadow: rgba(1, 1, 1, 0.2) 0px 1px 6px;
+  }
+  .al_page_info {
+    flex-direction: column;
+    div {
+      margin-bottom: 0.2rem;
+    }
+  }
+  .al_article {
+    padding: 0 !important;
+  }
+
+  .al_error {
+    padding: 0 !important;
+
+    h1 {
+      font-size: 65px;
+    }
+  }
+
+  .al_error_info_container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-bottom: 8px;
+    }
+    .al_error_ques {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+    .al_error_ans {
+      margin-left: 3px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1249px) {
+  .al_main_container {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .al_main_container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}

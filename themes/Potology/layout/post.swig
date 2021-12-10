@@ -4,8 +4,9 @@
     {% if theme.gitalk.enable %}
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     {% endif %}
-    <link rel='stylesheet' href="{{ url_for('/css/prism-material-light.css') }}" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css" media="print" onload="this.media='all'">
+    <!-- <link rel='stylesheet' href="{{ url_for('/css/prism-material-light.css') }}" media="print" onload="this.media='all'"> -->
+    <!-- <link rel='stylesheet' href="{{ url_for('/css/prism.css') }}" media="print" onload="this.media='all'"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css" media="print" onload="this.media='all'"> -->
 {% endblock %}
 
 {% block content %}
@@ -15,7 +16,7 @@
     <div class="al_page_background dis_flex_center al_full_cover"></div>
     <div class="al_pos_ab al_fake_background"></div>
     <div class="al_page_container">
-        
+
         <div class="al_main_container al_shadow al_main_page_container">
             <article class="al_article">
                 <div class="al_index_post_title_cnt dis_flex">
@@ -26,7 +27,7 @@
                         {{ page.title|default('No Title') }}
                     </h1>
                     <div class="al_page_info dis_flex">
-                        
+
                         {% if wordcount %}
                             <div class="al_page_content_info">
                                 {{ wordcount(page.content) }} words
@@ -47,7 +48,7 @@
 
                         <div class="al_page_content_info">
                             {{ page.date.format('MMM D, Y') }}
-                        </div>    
+                        </div>
                     </div>
                     <div class="al_page_tags"> {{ list_tags(page.tags, { style: false, class: "al-tag", show_count: false, separator: "" }) }} </div>
                 </div>

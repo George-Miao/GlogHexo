@@ -8,8 +8,13 @@
 
         <div class="dis_flex_jcenter al_header_hoverable al_header_right">
             <!-- <a href="/">PORTAL</a> -->
+            <a href="/atom.xml" >
+                <svg class="al_header_icon" >
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/rss.svg"></use>
+                </svg>
+            </a>
             <a href="/about">ABOUT</a>
-            <a href="/archives">ARCHIVES</a>  
+            <a href="/archives">ARCHIVES</a>
         </div>
     </div>
 </header>

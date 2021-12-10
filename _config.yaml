@@ -4,7 +4,9 @@ description: ''
 keywords: null
 bio: 'Parsley, sage, rosemary and thyme'
 author: George Miao
-language: en
+language:
+  - en_US
+  - zh_Hans_CN
 timezone: Asia/Shanghai
 url: 'http://miao.dev'
 root: /
@@ -34,13 +36,19 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
 highlight:
-  enable: false
+    enable: false
 prismjs:
+    enable: false
+
+prism_plus:
   enable: true
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  theme: 'prism-okaidia'
+  presets:
+    default:
+      theme: 'prism-okaidia'
+
 index_generator:
   path: ''
   per_page: 10

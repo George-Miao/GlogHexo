@@ -15,4 +15,3 @@
         {% include "./plugins/plugin.swig" %}
     </body>
 </html>
-        

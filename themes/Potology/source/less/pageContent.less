@@ -1,6 +1,7 @@
-
+@import './var.less';
 
 // ol,ul {
+
 //   list-style: none
 // }
 
@@ -19,100 +20,124 @@
   z-index: 0;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary,ins {
-  display: block
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+ins {
+  display: block;
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 u {
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $theme_color_light 50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    @theme_color_light 50%
+  );
   background-repeat: repeat-x;
   background-size: 2px 2px;
-  background-position: 0 1.05em
+  background-position: 0 1.05em;
 }
 
 s {
-  color: #878787
+  color: #878787;
 }
 
 p {
-  margin-bottom: 0.1em
+  margin-bottom: 0.1em;
 }
 
 hr {
   margin-bottom: 0.7em;
-  margin-top: 0.7em
+  margin-top: 0.7em;
 }
 
-ins, .success, .info, .warning, .danger {
-  padding: .5rem .5rem .5rem 1rem;
+ins,
+.success,
+.info,
+.warning,
+.danger {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   margin-left: -1rem;
   text-decoration: none;
 }
 
-.success, .info, .warning, .danger {
+.success,
+.info,
+.warning,
+.danger {
   text-decoration: none;
   margin: 2rem 0;
   p {
-    margin-top: 0.35rem
+    margin-top: 0.35rem;
   }
 }
 
 ins {
   background: #e5ffd5;
-  border-left: .2rem solid #aade8b;
+  border-left: 0.2rem solid #aade8b;
   &::before {
-    content: "+";
-    margin-right: 1rem
+    content: '+';
+    margin-right: 1rem;
   }
-  line-height: normal
+  line-height: normal;
 }
 
 .success {
   background: #e5ffd5;
-  border-left: .2rem solid #aade8b;
+  border-left: 0.2rem solid #aade8b;
 }
 
 .info {
   background: #cbeeff;
-  border-left: .2rem solid #53ceff;;
+  border-left: 0.2rem solid #53ceff;
 }
 
 .warning {
   background: #ffe2d1;
-  border-left: .2rem solid #ffa670;
+  border-left: 0.2rem solid #ffa670;
 }
 
 .danger {
   background: #ffc5c5;
-  border-left: .2rem solid #ff6868;
+  border-left: 0.2rem solid #ff6868;
 }
 
 blockquote {
   display: block;
   margin-left: -1em;
   padding-left: 0.8em;
-  border-left: 0.2em solid $theme_color_light;
+  border-left: 0.2em solid @theme_color_light;
   font-style: italic;
 }
 
 .arrow svg #rod {
-  stroke: #545454
+  stroke: #545454;
 }
 
 .arrow svg #point {
-  fill: #545454
+  fill: #545454;
 }
 
 mark {
   color: inherit;
-   display: inline;
+  display: inline;
   padding: 0.2em 0.5em;
-  background-color: #fcffc0
+  background-color: #fcffc0;
 }
 
 figure.highlight {
@@ -128,8 +153,8 @@ figure.highlight {
   }
 
   td {
-        border: none;
-        padding: 0;
+    border: none;
+    padding: 0;
   }
 
   td.gutter {
@@ -148,7 +173,8 @@ figure.highlight {
   display: block;
   line-height: 1.5;
 
-  th, td {
+  th,
+  td {
     padding: 6px 13px;
     border: 1px solid #dfe2e5;
   }
@@ -158,11 +184,12 @@ figure.highlight {
   }
 }
 
-#post-body > ul, #post-body > ol {
+#post-body > ul,
+#post-body > ol {
   padding-inline-start: 0px;
 
   // li {
-    // margin-bottom: 5px;
+  // margin-bottom: 5px;
   // }
 
   p {
@@ -171,10 +198,10 @@ figure.highlight {
 }
 
 pre {
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
 }
 
 #post-body > ul {
@@ -183,8 +210,8 @@ pre {
 
   li {
     &::before {
-      content: "•";
-      color: $theme_color;
+      content: '•';
+      color: @theme_color;
       display: inline-block;
       margin-right: 10px;
       line-height: 23px;
@@ -193,38 +220,38 @@ pre {
     }
 
     &::marker {
-      content: ""
+      content: '';
     }
 
-    line-height 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
 #post-body > h2 {
-  padding-bottom: .3em;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid #dedede;
 }
 
-.task-list-item  {
+.task-list-item {
   position: relative;
-  margin-bottom: .4rem;
-  &::before{
-    content: ""!important
+  margin-bottom: 0.4rem;
+  &::before {
+    content: '' !important;
   }
   input {
     margin: 0;
     position: absolute;
-    top: .25rem;
+    top: 0.25rem;
   }
   label {
-    text-indent: 0
-    line-height: 100%
-    margin-left: 1.5rem
+    text-indent: 0;
+    line-height: 100%;
+    margin-left: 1.5rem;
   }
 }
 
 .footnotes-list {
-  padding-inline-start: 0
+  padding-inline-start: 0;
 }
 
 .footnote-item {
@@ -232,45 +259,43 @@ pre {
   margin-top: 1rem;
   display: flex;
   position: relative;
-  
+
   p {
-    margin-top: 0
-    text-indent: 0
+    margin-top: 0;
+    text-indent: 0;
   }
 
   &::before {
-      content: counter(ol) ".";
-      line-height: 24px;
-      counter-increment: ol;
-      color: $theme_color;
-      font-family: cascadia code;
-      text-align: right;
-      min-width: 1em;
-      margin-right: 0.5em;
-      font-size: 14px;
-      position: absolute;
-      left: -1.4rem;
-    }
+    content: counter(ol) '.';
+    line-height: 24px;
+    counter-increment: ol;
+    color: @theme_color;
+    font-family: Cascadia Code;
+    text-align: right;
+    min-width: 1em;
+    margin-right: 0.5em;
+    font-size: 14px;
+    position: absolute;
+    left: -1.4rem;
+  }
 }
 
-
-#post-body dl dd{
+#post-body dl dd {
   margin-inline-start: 20px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 ol {
   counter-reset: ol;
   li {
     display: block;
-    // text-indent: -1em;
-    line-height 28px;
+    line-height: 28px;
 
     &::before {
-      content: counter(ol) ".";
+      content: counter(ol) '.';
       line-height: 24px;
       counter-increment: ol;
-      color: $theme_color;
+      color: @theme_color;
       font-family: cascadia code;
       text-align: right;
       min-width: 1em;
@@ -284,22 +309,27 @@ ol {
 
 #post-body img ~ em {
   color: #aaa;
-  margin: .5em auto;
+  margin: 0.5em auto;
   display: block;
   text-align: center;
 }
 
 #post-body {
-  & > h1:hover,  & > h2:hover,  & > h3:hover,  & > h4:hover,  & > h5:hover,  & > h6:hover {
-    color: #666
+  & > h1:hover,
+  & > h2:hover,
+  & > h3:hover,
+  & > h4:hover,
+  & > h5:hover,
+  & > h6:hover {
+    color: #666;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #post-body dl dd{
+  #post-body dl dd {
     margin-inline-start: 20px;
   }
   .al_index_background_letter {
-    display: none
+    display: none;
   }
 }
