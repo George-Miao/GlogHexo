@@ -22,7 +22,7 @@
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-image-cloudflare": "^0.2.3",
-    "hexo-prism-plus": "https://github.com/George-Miao/hexo-prism-plus.git",
+    "hexo-prism-plus": "^2.1.6",
     "hexo-renderer-less": "^2.0.2",
     "hexo-renderer-markdown-it": "^5.0.0",
     "hexo-renderer-swig": "^1.1.0",
