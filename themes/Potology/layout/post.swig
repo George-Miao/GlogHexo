@@ -4,9 +4,6 @@
     {% if theme.gitalk.enable %}
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     {% endif %}
-    <!-- <link rel='stylesheet' href="{{ url_for('/css/prism-material-light.css') }}" media="print" onload="this.media='all'"> -->
-    <!-- <link rel='stylesheet' href="{{ url_for('/css/prism.css') }}" media="print" onload="this.media='all'"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css" media="print" onload="this.media='all'"> -->
 {% endblock %}
 
 {% block content %}
