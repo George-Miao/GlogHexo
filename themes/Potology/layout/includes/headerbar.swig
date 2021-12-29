@@ -1,17 +1,25 @@
 <header class="al_header al_pos_fixed">
   <div class="al_header_container dis_flex_jcenter">
     <div class="al_header_container_left">
-      <div class="al_header_site_title" fill="white">
-        <!-- <svg
-          class="al_header_site_title_icon"
+      <div class="al_header_site_title">
+        <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 3000 3000"
+          class="al_header_site_title_icon"
+          viewBox="0 0 3055.29 2653.48"
         >
-          <path
-            d="M3429.52,2760.07c-118.58,411.52-526.45,706.8-982.9,675.1-464.47-32.25-835.47-402.87-868.16-867.31-38.59-548.45,394.9-1019.36,935.11-1019.36h.71a69,69,0,0,0,69.2-68.92V1068.93a68.86,68.86,0,0,0-68.69-68.93h-1.22c-829.39,0-1501.56,673.14-1500,1502.9C1015.14,3331.36,1690.7,4003,2519.16,4000c725.9-2.65,1330.26-520.91,1465.93-1207.62a69,69,0,0,0-67.6-82.37H3495.81A69,69,0,0,0,3429.52,2760.07Z"
-            transform="translate(-1013.57 -1000)"
+          <polygon
+            class="cls-1"
+            points="652.85 2272.28 1525.78 2267.96 1309.43 2647.01 0 2653.48 1514.56 0 1734.68 376.91 652.85 2272.28"
           />
-        </svg> -->
+          <polygon
+            class="cls-1"
+            points="2174.89 1130.72 1742.16 1888.87 1304.44 1893.19 1954.77 753.82 2174.89 1130.72"
+          />
+          <polygon
+            class="cls-1"
+            points="3055.29 2638.4 1745.9 2644.87 1962.45 2265.77 2398.79 2263.63 2178.62 1886.72 2395.01 1507.63 3055.29 2638.4"
+          />
+        </svg>
         <a href="/">{{ config.title }}</a>
       </div>
     </div>

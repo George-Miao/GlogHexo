@@ -1,0 +1,32 @@
+{
+  "name": "Glog",
+  "short_name": "Glog",
+  "icons": [
+    {
+      "src": "/assets/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
+    },
+    {
+      "src": "/assets/android-chrome.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    },
+    {
+      "src": "/assets/icon-192-maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#be223a",
+  "background_color": "#be223a",
+  "description": "George Miao's blog",
+  "display": "standalone"
+}
