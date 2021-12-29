@@ -18,6 +18,7 @@
   integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"
   defer
 ></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js" defer></script>
 
 {% if config.vercel && config.cf_insight_token %}
 <script
@@ -29,37 +30,7 @@
 ></script>
 {% endif %}
 
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/assets/apple-touch-icon.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="/assets/favicon-32x32.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="194x194"
-  href="/assets/favicon-194x194.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="192x192"
-  href="/assets/android-chrome-192x192.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="/assets/favicon-16x16.png"
-/>
 <link rel="manifest" href="/assets/site.webmanifest" />
-<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#be223a" />
 <link rel="shortcut icon" href="/assets/favicon.ico" />
 
 <link rel="stylesheet" href="{{ url_for('css/style.css') }}" />
