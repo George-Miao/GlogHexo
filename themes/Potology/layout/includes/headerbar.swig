@@ -39,6 +39,7 @@
       </a>
       <a href="/about">ABOUT</a>
       <a href="/archives">ARCHIVES</a>
+      <a href="https://proj.miao.dev">PROJECTS</a>
     </div>
   </div>
 </header>
